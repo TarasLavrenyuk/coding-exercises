@@ -1,4 +1,4 @@
-package problem9_maximumsubarraysum
+package problem12_sortedandrotatedminimum
 
 import (
 	"fmt"
