@@ -1,4 +1,4 @@
-package problem9_maximumsubarraysum
+package problem11_sortedandrotatedminimum
 
 // SortedAndRotatedMinimum A sorted array of distinct elements arr[] is rotated at some unknown point, the task is to
 // find the minimum element in it.
