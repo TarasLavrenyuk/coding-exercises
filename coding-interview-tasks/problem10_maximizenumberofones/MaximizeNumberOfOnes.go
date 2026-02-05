@@ -1,4 +1,4 @@
-package problem9_maximumsubarraysum
+package problem10_maximizenumberofones
 
 // MaximizeNumberOfOnes Given a binary array nums[] containing only 0s and 1s and an integer k, you are allowed to flip
 // at most k 0s to 1s. Find the maximum number of consecutive 1's that can be obtained in the array after performing the

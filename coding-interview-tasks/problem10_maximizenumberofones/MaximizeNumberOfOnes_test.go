@@ -1,4 +1,4 @@
-package problem9_maximumsubarraysum
+package problem10_maximizenumberofones
 
 import (
 	"fmt"
