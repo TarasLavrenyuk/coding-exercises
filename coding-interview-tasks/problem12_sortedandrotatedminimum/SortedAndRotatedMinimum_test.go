@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:coding-interview-tasks/problem12_sortedandrotatedminimum/SortedAndRotatedMinimum_test.go
 package problem12_sortedandrotatedminimum
+========
+package problem11_sortedandrotatedminimum
+>>>>>>>> origin/master:coding-interview-tasks/problem11_repetitiveadditionofdigits/SortedAndRotatedMinimum_test.go
 
 import (
 	"fmt"

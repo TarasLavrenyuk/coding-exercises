@@ -1,4 +1,8 @@
+<<<<<<<< HEAD:coding-interview-tasks/problem12_sortedandrotatedminimum/SortedAndRotatedMinimum.go
 package problem12_sortedandrotatedminimum
+========
+package problem11_sortedandrotatedminimum
+>>>>>>>> origin/master:coding-interview-tasks/problem11_repetitiveadditionofdigits/SortedAndRotatedMinimum.go
 
 // SortedAndRotatedMinimum A sorted array of distinct elements arr[] is rotated at some unknown point, the task is to
 // find the minimum element in it.
