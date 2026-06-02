@@ -43,15 +43,9 @@ object StringMathUtils {
 
   fun mult(number1: String, number2: String): String {
     ensureStringsAreNumber(number1, number2)
-    val longNumber: String
-    val shortNumber: String
-    defineLongerAndShorterNumber(number1, number2).also {
-      longNumber = it.first
-      shortNumber = it.second
-    }
+    val (longNumber, shortNumber) = defineLongerAndShorterNumber(number1, number2)
 
     var result = "0"
-
     for (i in 1..shortNumber.length) {
       var current = ""
       for (j in 1 until i) {
@@ -71,17 +65,7 @@ object StringMathUtils {
     return result
   }
 
-  fun String.isNumberString(): Boolean {
-    for (i in 0 until this.length) {
-      try {
-        this[i].toString().toInt()
-      } catch (e: NumberFormatException) {
-        e.printStackTrace()
-        return false
-      }
-    }
-    return true
-  }
+  fun String.isNumberString(): Boolean = all { it.isDigit() }
 
   fun ensureStringsAreNumber(vararg strings: String) = strings.forEach {
     if (!it.isNumberString()) {
@@ -92,14 +76,14 @@ object StringMathUtils {
   fun String.getNumberOnPosition(position: Int): Int {
     return try {
       this[length - position].toString().toInt()
-    } catch (e: IndexOutOfBoundsException) {
+    } catch (_: IndexOutOfBoundsException) {
       0
     }
   }
 
   private fun defineLongerAndShorterNumber(
-      number1: String,
-      number2: String
+    number1: String,
+    number2: String
   ) = if (number1.length > number2.length) Pair(number1, number2)
   else Pair(number2, number1)
 }
